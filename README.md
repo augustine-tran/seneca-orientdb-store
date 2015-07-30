@@ -2,7 +2,7 @@ seneca-orientdb-store
 =======================
 
 [![Build Status](https://travis-ci.org/rualatngua/seneca-orientdb-store.svg)](https://travis-ci.org/rualatngua/seneca-orientdb-store)
-(Cloned from seneca-postgresql-store), seneca-orientdb-store is a [OrientDB][postgresqlorg] database plugin for the [Seneca][seneca] MVP toolkit. The plugin is using the
+(Cloned from seneca-postgresql-store), seneca-orientdb-store is a [OrientDB][orientdborg] database plugin for the [Seneca][seneca] MVP toolkit. The plugin is using the
 [OrientJS][orientjs] driver.
 
 Usage:
