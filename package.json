@@ -1,6 +1,6 @@
 {
   "name": "seneca-orientdb-store",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Seneca data store plugin for OrientDB",
   "main": "lib/orientdb-store.js",
   "author": "Khanh Tran",
