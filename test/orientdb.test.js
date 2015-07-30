@@ -11,23 +11,22 @@ var shared = require('seneca-store-test')
 
 
 var config = {
-  log:'print'
+  log:'debug'
 };
 var si = seneca();
 si.use(require('..'), {
-  name: 'senecatest',
-  host: '127.0.0.1',
-  port: 5432,
-  username: 'senecatest',
-  password: 'senecatest',
-  options: { }
+  name: 'test',
+  host: 'localhost',
+  port: 2424,
+  username: 'root',
+  password: 'root'
 })
 
 si.__testcount = 0
 var testcount = 0
 
 
-describe('postgres', function () {
+describe('orientdb', function () {
   it('basic', function (done) {
     testcount++
     shared.basictest(si, done)
@@ -50,8 +49,16 @@ describe('postgres', function () {
       })
   })
 
+
+  it('sqltest', function (done) {
+    testcount++
+    shared.sqltest(si, done)
+  })
+
   it('close', function (done) {
     shared.closetest(si, testcount, done)
   })
+
+
 })
 

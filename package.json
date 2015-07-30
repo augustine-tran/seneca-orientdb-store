@@ -1,35 +1,36 @@
 {
-  "name": "seneca-postgresql-store",
-  "version": "0.7.0",
-  "description": "Seneca data store plugin for PostgreSQL",
-  "main": "lib/postgresql-store.js",
-  "author": "Marian Radulescu",
+  "name": "seneca-orientdb-store",
+  "version": "0.1.0",
+  "description": "Seneca data store plugin for OrientDB",
+  "main": "lib/orientdb-store.js",
+  "author": "Khanh Tran",
   "contributors": [
+    "Marian Radulescu",
     "Peter Elger <elger.peter@gmail.com> (http://peterelger.com/)",
     "Nicolas Herment",
     "Cristian Ianto",
-    "Brian Mullan"
+    "Brian Mullan",
+    "Khanh Tran <donga.spirit@gmail.com"
   ],
   "license": "MIT",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nherment/seneca-postgresql-store.git"
+    "url": "https://github.com/rualatngua/seneca-orientdb-store.git"
   },
   "keywords": [
     "seneca",
     "plugin",
     "store",
-    "postgres",
-    "postgresql",
-    "pg"
+    "orientdb",
+    "orientjs"
   ],
   "scripts": {
     "test": "node_modules/.bin/mocha test --reporter spec"
   },
   "dependencies": {
     "seneca": "0.6.1",
-    "pg": "4.4.0",
+    "orientjs": "2.0.0",
     "underscore": "1.4.x",
     "async": "0.1.x",
     "node-uuid": "1.4.x"

@@ -9,13 +9,13 @@ seneca-postgresql-store is a [PostgreSQL][postgresqlorg] database plugin for the
 Usage:
 
     var seneca = require('seneca');
-    var store = require('seneca-postgresql-store');
+    var store = require('seneca-orientdb-store');
 
     var config = {}
     var storeopts = {
       name:'dbname',
       host:'127.0.0.1',
-      port:5432,
+      port:2424,
       username:'user',
       password:'password'
     };
@@ -30,6 +30,6 @@ Usage:
     })
     ...
 
-[postgresqlorg]: http://www.postgresql.org/
+[postgresqlorg]: http://www.orientdb.org/
 [seneca]: http://senecajs.org/
-[nodepg]: https://github.com/brianc/node-postgres
+[nodepg]: https://github.com/orientdb/orientjs
